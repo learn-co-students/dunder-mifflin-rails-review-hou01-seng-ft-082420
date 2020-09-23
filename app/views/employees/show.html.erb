@@ -1,0 +1,12 @@
+<h1> This is <%=@employee.name%>'s Profile </h1>
+<h3>Picture:</h3> <img src=<%=@employee.img_url%> width="600" height="300">
+<h3>Nick: <%=@employee.alias%></h3>
+<h3>Postition: <%=@employee.title%></h3>
+<h3>Office: <%=@employee.office%></h3>
+<h3> Owns these dogs </h3>
+<li><%= link_to @employee.dog.name, dog_path(@employee.dog) %></li>
+<br/>
+<%= link_to "Employees Page", employees_path%>
+<br/>
+<%= link_to "Edit Employee Info", edit_employee_path(@employee)%>
+
