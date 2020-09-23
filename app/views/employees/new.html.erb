@@ -1,0 +1,17 @@
+<p>Create a New Employee:</p>
+
+<%=form_for @employee do |f|%>
+<p>First Name: <%= f.text_field :first_name%></p>
+<p>Last Name: <%= f.text_field :last_name%></p>
+<p>Alias: <%= f.text_field :alias%></p>
+<p>Title: <%= f.text_field :title%></p>
+<p>Office: <%= f.text_field :office%></p>
+<p>Image URL Address: <%=f.text_field :img_url%>
+
+</br>
+<p>Select Dog: <%= f.collection_select :dog_id, Dog.all, :id, :name %> </p>
+
+</br>
+<p><%= f.submit "Create Employee"%></p>
+
+<%end%>
