@@ -1,8 +1,7 @@
 class DogsController < ApplicationController
 
     def index
-        @dogs = Dog.all.group(:owners).count
-        byebug
+        @dogs = Dog.all.sort_by {|dog| dog.employees.count}.reverse
     end
 
     def show
