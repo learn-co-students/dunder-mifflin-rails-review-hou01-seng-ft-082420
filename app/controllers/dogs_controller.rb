@@ -12,6 +12,7 @@ class DogsController < ApplicationController
         @dog = Dog.new
     end
 
+<<<<<<< HEAD
     def create
 
     end
@@ -29,6 +30,8 @@ class DogsController < ApplicationController
     
     
     
+=======
+>>>>>>> 862afd2750da96d1fe654aaf16df8394495dbf61
     private
 
     def dogs_params
