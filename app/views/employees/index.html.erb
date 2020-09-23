@@ -1,0 +1,10 @@
+<h1> THE SLAVES </h1>
+<% @employees.each do |employee| %> 
+<li><%= link_to employee.name, employee_path(employee) %></li>
+<% end %>
+<br/>
+
+<%= link_to "Add new Employee", new_employee_path%>
+
+<br/>
+<%= link_to "Dogs Page", dogs_path%>
