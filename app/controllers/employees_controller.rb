@@ -14,7 +14,6 @@ class EmployeesController < ApplicationController
     end
 
     def create
-<<<<<<< HEAD
         new_employee = Employee.new(employee_params)
 
         if !new_employee.valid?
@@ -24,11 +23,6 @@ class EmployeesController < ApplicationController
             new_employee.save
             redirect_to employee_path(new_employee)
         end
-=======
-        @employee = Employee.create!(employee_params)
-        byebug
-        redirect_to employee_path(@employee)
->>>>>>> 862afd2750da96d1fe654aaf16df8394495dbf61
     end
 
     def edit
@@ -44,10 +38,6 @@ class EmployeesController < ApplicationController
 
     end
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 862afd2750da96d1fe654aaf16df8394495dbf61
     private
 
     def employee_params
